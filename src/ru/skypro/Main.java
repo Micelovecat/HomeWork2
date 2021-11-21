@@ -22,58 +22,59 @@ public class Main {
         System.out.println("h = " + h);
 
 
-        float firstBoxer = 78.2f;
-        float secondBoxer = 82.7f;
-        float fullWeight = firstBoxer + secondBoxer;
-        float diffWeight = secondBoxer - firstBoxer;
+        float firstBoxerWeight = 78.2f;
+        float secondBoxerWeight = 82.7f;
+        float fullBoxerWeight = firstBoxerWeight + secondBoxerWeight;
+        float diffBoxerWeight = secondBoxerWeight - firstBoxerWeight;
         System.out.println("HomeWork2. Exercise 2.");
-        System.out.println("Общий вес бойцов = " + fullWeight + " кг");
-        System.out.println("Разница в весе = " + diffWeight + " кг");
+        System.out.println("Общий вес бойцов = " + fullBoxerWeight + " кг");
+        System.out.println("Разница в весе = " + diffBoxerWeight + " кг");
 
 
         int bananasGramm = 80;
-        int bananasPieses = 5;
-        float milkGramm = 105 / 100f;
+        int bananasThings = 5;
         int milkMl = 200;
+        int milkWeightGmPer100Ml = 105;
+        float milkNumber = milkMl / 100;
+        float milkWeightGr = milkNumber * milkWeightGmPer100Ml;
         int icecreamGramm = 100;
-        int icecreamPieses = 2;
+        int icecreamThings = 2;
         int eggsGramm = 70;
-        int eggsPieses = 4;
-        float mixed = (bananasGramm * bananasPieses) + (milkGramm * milkMl) + (icecreamGramm * icecreamPieses) + (eggsGramm * eggsPieses);
-        float mixedKg = mixed / 1000f;
+        int eggsThings = 4;
+        float totalWeightGr = (bananasGramm * bananasThings) + milkWeightGr + (icecreamGramm * icecreamThings) + (eggsGramm * eggsThings);
+        float totalWeightKg = totalWeightGr / 1000f;
         System.out.println("HomeWork2. Exercise 3.");
-        System.out.println("Общий вес завтрака = " + mixed + " грамм");
-        System.out.println("Общий вес завтрака " + mixedKg + " кг");
-
+        System.out.println("Общий вес завтрака = " + totalWeightGr + " грамм");
+        System.out.println("Общий вес завтрака " + totalWeightKg + " кг");
 
         int weightOffKg = 7;
-        int weightOffGramm = weightOffKg * 1000;
-        int value250InDay = weightOffGramm / 250;
-        int value500InDay = weightOffGramm / 500;
-        int middleSuccessfulDay = (value500InDay + value250InDay) / 2 % weightOffGramm;
+        int weightOffGr = weightOffKg * 1000;
+        int dietDays250gmPerDay = weightOffGr / 250;
+        int dietDays500gmPerDay = weightOffGr / 500;
+        int middleDietDay = (dietDays500gmPerDay + dietDays250gmPerDay) / 2 % weightOffGr;
         System.out.println("HomeWork2. Exercise 4.");
-        System.out.println("Сброс веса в день по  250 гр = " + value250InDay + " дней");
-        System.out.println("Сброс веса в день по  500 гр = " + value500InDay + " дней");
-        System.out.println("Среднее количество дней = " + middleSuccessfulDay);
+        System.out.println("Сброс веса в день по  250 гр = " + dietDays250gmPerDay + " дней");
+        System.out.println("Сброс веса в день по  500 гр = " + dietDays500gmPerDay + " дней");
+        System.out.println("Среднее количество дней = " + middleDietDay);
 
 
-        int mashaPayMonth = 67_760;
-        int denisPayMonth = 83_690;
-        int christinaPayMonth = 76_230;
-        float percent = 10;
-        float percentPay = 1 + (percent / 100);
-        float percentMashaNowPay = mashaPayMonth * percentPay;
-        float mashaPayUp = percentMashaNowPay - mashaPayMonth;
-        float percentDenisNowPay = denisPayMonth * percentPay;
-        float denisPayUp = percentDenisNowPay - denisPayMonth;
-        float percentChristinaNowPay = christinaPayMonth * percentPay;
-        float christinaPayUp = percentChristinaNowPay - christinaPayMonth;
+        int mashaSalary = 67_760;
+        int denisSalary = 83_690;
+        int christinaSalary = 76_230;
+        float salaryIncreasPercent = 10;
+        float percentPay = 1 + (salaryIncreasPercent / 100);
+        float percentMashaNewPay = mashaSalary * percentPay;
+        float mashaPayUpYear = percentMashaNewPay - mashaSalary;
+        float percentDenisNewPay = denisSalary * percentPay;
+        float denisPayUpYear = percentDenisNewPay - denisSalary;
+        float percentChristinaNewPay = christinaSalary * percentPay;
+        float christinaPayUpYear = percentChristinaNewPay - christinaSalary;
         System.out.println("HomeWork2. Exercise 5.");
-        System.out.println("Маша теперь получает = " + percentMashaNowPay + " рублей");
-        System.out.println("Годовой доход Маши вырос на: " + mashaPayUp + " рублей");
-        System.out.println("Денис теперь получает = " + percentDenisNowPay + " рублей");
-        System.out.println("Годовой доход Дениса вырос на:" + denisPayUp + " рублей");
-        System.out.println("Кристина теперь получает = " + percentChristinaNowPay + " рублей");
-        System.out.println("Годовой доход Кристины вырос на: " + christinaPayUp + " рублей");
+        System.out.println("Маша теперь получает = " + percentMashaNewPay + " рублей");
+        System.out.println("Годовой доход Маши вырос на: " + mashaPayUpYear + " рублей");
+        System.out.println("Денис теперь получает = " + percentDenisNewPay + " рублей");
+        System.out.println("Годовой доход Дениса вырос на:" + denisPayUpYear + " рублей");
+        System.out.println("Кристина теперь получает = " + percentChristinaNewPay + " рублей");
+        System.out.println("Годовой доход Кристины вырос на: " + christinaPayUpYear + " рублей");
     }
 }
