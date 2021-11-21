@@ -10,7 +10,7 @@ public class Main {
         short e = 2;
         double f = 6.1;
         char g = 0;
-        boolean h = d > e;
+        boolean h = false;
         System.out.println("HomeWork2. Exercise 1.");
         System.out.println("a = " + a);
         System.out.println("b = " + b);
@@ -35,8 +35,8 @@ public class Main {
         int bananasThings = 5;
         int milkMl = 200;
         int milkWeightGmPer100Ml = 105;
-        float milkNumber = milkMl / 100;
-        float milkWeightGr = milkNumber * milkWeightGmPer100Ml;
+        int milkNumber = milkMl / 100;
+        int milkWeightGr = milkNumber * milkWeightGmPer100Ml;
         int icecreamGramm = 100;
         int icecreamThings = 2;
         int eggsGramm = 70;
