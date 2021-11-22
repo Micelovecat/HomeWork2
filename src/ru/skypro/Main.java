@@ -62,19 +62,25 @@ public class Main {
         int denisSalary = 83_690;
         int christinaSalary = 76_230;
         float salaryIncreasPercent = 10;
-        float percentPay = 1 + (salaryIncreasPercent / 100);
-        float percentMashaNewPay = mashaSalary * percentPay;
-        float mashaPayUpYear = percentMashaNewPay - mashaSalary;
-        float percentDenisNewPay = denisSalary * percentPay;
-        float denisPayUpYear = percentDenisNewPay - denisSalary;
-        float percentChristinaNewPay = christinaSalary * percentPay;
-        float christinaPayUpYear = percentChristinaNewPay - christinaSalary;
+        float percentSalary = 1 + (salaryIncreasPercent / 100);
+        float mashaNewSalary = mashaSalary * percentSalary;
+        float mashaSalaryMonthUp = mashaNewSalary - mashaSalary;
+        float mashaSalaryYearUp = (mashaNewSalary * 12) - (mashaSalary * 12);
+        float denisNewSalary = denisSalary * percentSalary;
+        float denisSalaryMonthUp = (denisNewSalary * 12) - (denisSalary * 12);
+        float denisSalaryYearUp = denisNewSalary - denisSalary;
+        float christinaNewSalary = christinaSalary * percentSalary;
+        float christinaSalaryMonthUp = (christinaNewSalary * 12) - (christinaSalary * 12);
+        float christinaSalaryYearUp = christinaNewSalary - christinaSalary;
         System.out.println("HomeWork2. Exercise 5.");
-        System.out.println("Маша теперь получает = " + percentMashaNewPay + " рублей");
-        System.out.println("Годовой доход Маши вырос на: " + mashaPayUpYear + " рублей");
-        System.out.println("Денис теперь получает = " + percentDenisNewPay + " рублей");
-        System.out.println("Годовой доход Дениса вырос на:" + denisPayUpYear + " рублей");
-        System.out.println("Кристина теперь получает = " + percentChristinaNewPay + " рублей");
-        System.out.println("Годовой доход Кристины вырос на: " + christinaPayUpYear + " рублей");
+        System.out.println("Маша теперь получает = " + mashaNewSalary + " рублей");
+        System.out.println("Месячный доход Маши вырос на: " + mashaSalaryMonthUp + " рублей");
+        System.out.println("Годовой доход Маши вырос на: " + mashaSalaryYearUp + " рублей");
+        System.out.println("Денис теперь получает = " + denisNewSalary + " рублей");
+        System.out.println("Месячный доход Дениса вырос на: " + denisSalaryMonthUp + " рублей");
+        System.out.println("Годовой доход Дениса вырос на:" + denisSalaryYearUp + " рублей");
+        System.out.println("Кристина теперь получает = " + christinaNewSalary + " рублей");
+        System.out.println("Месячный доход Кристины вырос на: " + christinaSalaryMonthUp + " рублей");
+        System.out.println("Годовой доход Кристины вырос на: " + christinaSalaryYearUp + " рублей");
     }
 }
