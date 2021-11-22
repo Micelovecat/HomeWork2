@@ -73,12 +73,12 @@ public class Main {
         float percentSalary = 1 + (salaryIncreasPercent / 100);
         float mashaNewSalary = mashaSalary * percentSalary;
         float mashaSalaryMonthUp = mashaNewSalary - mashaSalary;
-        float mashaSalaryYearUp = (mashaNewSalary * 12) - (mashaSalary * 12);
+        float mashaSalaryYearUp = (mashaNewSalary - mashaSalary) * 12;
         float denisNewSalary = denisSalary * percentSalary;
-        float denisSalaryMonthUp = (denisNewSalary * 12) - (denisSalary * 12);
+        float denisSalaryMonthUp = (denisNewSalary - denisSalary) * 12;
         float denisSalaryYearUp = denisNewSalary - denisSalary;
         float christinaNewSalary = christinaSalary * percentSalary;
-        float christinaSalaryMonthUp = (christinaNewSalary * 12) - (christinaSalary * 12);
+        float christinaSalaryMonthUp = (christinaNewSalary - christinaSalary) * 12;
         float christinaSalaryYearUp = christinaNewSalary - christinaSalary;
         System.out.println("HomeWork2. Exercise 5.");
         System.out.println("Маша теперь получает = " + mashaNewSalary + " рублей");
