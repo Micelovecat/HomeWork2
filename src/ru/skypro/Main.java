@@ -1,8 +1,15 @@
 package ru.skypro;
 
 public class Main {
-
     public static void main(String[] args) {
+        HomeWorkEasy();
+        HomeWorkHard6();
+        HomeWorkHard7_1();
+        HomeWorkHard7_2();
+        HomeWorkHard8();
+    }
+
+    public static void HomeWorkEasy() {
         int a = 3;
         float b = 5.1f;
         long c = 4L;
@@ -47,6 +54,7 @@ public class Main {
         System.out.println("Общий вес завтрака = " + totalWeightGr + " грамм");
         System.out.println("Общий вес завтрака " + totalWeightKg + " кг");
 
+
         int weightOffKg = 7;
         int weightOffGr = weightOffKg * 1000;
         int dietDays250gmPerDay = weightOffGr / 250;
@@ -82,5 +90,53 @@ public class Main {
         System.out.println("Кристина теперь получает = " + christinaNewSalary + " рублей");
         System.out.println("Месячный доход Кристины вырос на: " + christinaSalaryMonthUp + " рублей");
         System.out.println("Годовой доход Кристины вырос на: " + christinaSalaryYearUp + " рублей");
+    }
+
+    public static void HomeWorkHard6() {
+        int a = 12;
+        int b = 27;
+        int c = 44;
+        int d = 15;
+        int e = 9;
+        int result = a * (b + (c - d * e));
+        int resultPlus = result * -1;
+
+        System.out.println("HomeWork2. Exercise 6.");
+        System.out.println("Результат = " + result);
+        System.out.println("Результат положительный = " + resultPlus);
+    }
+
+    public static void HomeWorkHard7_1() {
+        System.out.println("HomeWork2. Exercise 7.1");
+        int a = 5;
+        System.out.println("Было a = " + a);
+        a = 7;
+        int b = 7;
+        System.out.println("Было b = " + b);
+        b = 5;
+
+        System.out.println("Стало a = " + a);
+        System.out.println("Стало b = " + b);
+    }
+
+    public static void HomeWorkHard7_2() {
+        int a = 5;
+        int b = 7;
+
+        System.out.println("HomeWork2. Exercise 7.2");
+        System.out.println("Было a = " + a + ";" + " Было b = " + b + ".");
+
+        a = (a * b);
+        b = a / b;
+        a = a / b;
+        System.out.println("Стало a = " + a + ";" + " Стало b = " + b + ".");
+    }
+
+    public static void HomeWorkHard8() {
+        int a = 892;
+        a = a / 10;
+        int b = a % 10;
+        System.out.println("HomeWork2. Exercise 8");
+        System.out.println("b = " + b);
     }
 }
